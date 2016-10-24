@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo.iml" filepath="$PROJECT_DIR$/dubbo/dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-admin/dubbo-admin.iml" filepath="$PROJECT_DIR$/dubbo-admin/dubbo-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-afi/dubbo-afi.iml" filepath="$PROJECT_DIR$/dubbo-afi/dubbo-afi.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-cluster/dubbo-cluster.iml" filepath="$PROJECT_DIR$/dubbo-cluster/dubbo-cluster.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-common/dubbo-common.iml" filepath="$PROJECT_DIR$/dubbo-common/dubbo-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-config/dubbo-config.iml" filepath="$PROJECT_DIR$/dubbo-config/dubbo-config.iml" />
@@ -26,7 +27,6 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo-monitor/dubbo-monitor-api/dubbo-monitor-api.iml" filepath="$PROJECT_DIR$/dubbo-monitor/dubbo-monitor-api/dubbo-monitor-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-monitor/dubbo-monitor-default/dubbo-monitor-default.iml" filepath="$PROJECT_DIR$/dubbo-monitor/dubbo-monitor-default/dubbo-monitor-default.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-simple/dubbo-monitor-simple/dubbo-monitor-simple.iml" filepath="$PROJECT_DIR$/dubbo-simple/dubbo-monitor-simple/dubbo-monitor-simple.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dubbo-parent.iml" filepath="$PROJECT_DIR$/dubbo-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-registry/dubbo-registry.iml" filepath="$PROJECT_DIR$/dubbo-registry/dubbo-registry.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-registry/dubbo-registry-api/dubbo-registry-api.iml" filepath="$PROJECT_DIR$/dubbo-registry/dubbo-registry-api/dubbo-registry-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-registry/dubbo-registry-default/dubbo-registry-default.iml" filepath="$PROJECT_DIR$/dubbo-registry/dubbo-registry-default/dubbo-registry-default.iml" />
