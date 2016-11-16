@@ -14,6 +14,8 @@ public class RealSubject implements Subject,SubjectTest
      */
     public String SayHello(String name)
     {
+
+        System.out.println(name);
         return "hello " + name;
     }
 
