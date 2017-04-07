@@ -46,6 +46,6 @@ public interface LoadBalance {
 	 * @return selected invoker.
 	 */
     @Adaptive("loadbalance")
-	<T> Invoker<T> select(List<Invoker<T>> invokers, URL url, Invocation invocation) throws RpcException;
+	<T> Invoker<T> select(List<Invoker<T>> invinvokersokers, URL url, Invocation invocation) throws RpcException;
 
 }
