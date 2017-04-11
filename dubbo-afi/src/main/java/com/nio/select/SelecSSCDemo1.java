@@ -69,7 +69,7 @@ public class SelecSSCDemo1 {
 					}
 
 					String body = new String(buf.array());
-					System.out.println("body:"+body);
+					System.out.println("从客户端获取数据:"+body);
 				}
 				
 				//11.移除
