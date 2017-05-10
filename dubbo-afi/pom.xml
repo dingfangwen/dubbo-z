@@ -29,6 +29,21 @@
 		<skip_maven_deploy>true</skip_maven_deploy>
 	</properties>
 	<dependencies>
+
+
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>dubbo-config-api</artifactId>

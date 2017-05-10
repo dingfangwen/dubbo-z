@@ -3,7 +3,7 @@ package com.concurrent;
 import java.util.concurrent.*;
 
 /**
- * <p>TODO</p>
+ * <p>线程池</p>
  * <p/>
  * <PRE>
  * <BR>	修改记录
@@ -16,20 +16,21 @@ import java.util.concurrent.*;
  * @since 1.0
  */
 public class ThreadpoolDemo {
-    public static void main(String[] args) {
-        //创建线程池
-        ExecutorService service = new ThreadPoolExecutor(5, 10, 10, TimeUnit.SECONDS, new ArrayBlockingQueue(5), new RejectedExecutionHandler() {
-            @Override
-            public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
-                System.out.println("线程池实在忙不过来了，多出来的线程就拒绝吧！"+r);
-            }
-        });
 
-        //向线程池中提交任务
-        for(int i =1 ;i<=16;i++){
-            service.execute(new T12(i));
-        }
+    public static void main(String[] args)throws Exception {
 
+
+        ExecutorService service = Executors.newCachedThreadPool();
+//		service.execute(command);
+
+//		Future future = service.submit(new T13());
+//		Object obj = future.get();
+//		System.out.println(obj);
+
+        Future<String> future = service.submit(new T14());
+        String retStr = future.get();
+        System.out.println(retStr);
+        service.shutdown();
     }
 }
 
@@ -48,4 +49,40 @@ class T12 implements Runnable{
             e.printStackTrace();
         }
     }
+}
+
+
+class T14 implements Callable<String>{
+
+    @Override
+    public String call() throws Exception {
+        try {
+            System.out.println("T14开始执行。。。。");
+            Thread.sleep(5000);
+            System.out.println("T14执行结束。。。。");
+
+            return "return from t14~~~~";
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
+
+}
+
+class T13 implements Runnable{
+
+    @Override
+    public void run() {
+        try {
+            System.out.println("T13开始执行。。。。");
+            Thread.sleep(5000);
+            System.out.println("T13执行结束。。。。");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
+
 }
